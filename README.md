@@ -18,6 +18,7 @@ Modèle de classification d’images basé sur EfficientNetB3 permettant l’ide
 # Note
 - Pour atteindre une précision finale de 98.83 %, un travail d’optimisation des hyperparamètres a été nécessaire. L’objectif était de trouver la meilleure combinaison possible pour maximiser la performance du modèle lors de la phase d’entraînement.
 - Plusieurs expérimentations ont été menées en variant notamment l’architecture de base (MobileNetV2, ResNet50, EfficientNetB3, ConvNeXt), le taux de dropout, le nombre de blocs à décongeler dans le modèle pré-entraîné ainsi que le nombre d’époques d'entraînement. De plus, tous les modèles ont été exécutés sur Google Colab, avec accélération GPU. Voici un récapitulatif des différents tests effectués :
+  
 | Architecture | Droupout (%) | Blocs dégelés | Epochs | Accuracy (%) |
 |:------:|:------:|:------:|:------:| :------:|
 | MobileNetV2  | 55| 1|10 |56,87 |
