@@ -1,12 +1,12 @@
+import os
+import glob
 import tkinter as tk
+import numpy as np
 from tkinter import filedialog
 from PIL import Image, ImageTk, ImageOps, ImageDraw
-import numpy as np
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
-import os
 from playsound import playsound
-import glob
 
 class ImageApp:
     def __init__(self, root):
