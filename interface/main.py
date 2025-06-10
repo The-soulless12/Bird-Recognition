@@ -15,6 +15,7 @@ class ImageApp:
         self.root.geometry("600x400")
         self.root.resizable(False, False)
 
+        # On appelle le modèle pré-entraîné
         self.model = load_model(os.path.join('../model', 'E-30-35-98,83+.keras'))
         images_dir = '../images'
         self.class_names = sorted([
@@ -37,16 +38,7 @@ class ImageApp:
         self.predict_button = tk.Button(root, text="PREDICT", font=("Comic Sans MS", 10), command=self.predict_image)
         self.predict_button.place(x=180, y=270)
 
-        self.result_label = tk.Label(
-            root,
-            text="",
-            font=("Comic Sans MS", 12),
-            bg="#eec2c9",
-            width=30,  # Nombre de caractères maximum sur une ligne
-            wraplength=200,  # Largeur max en pixels avant retour à la ligne
-            justify="center",  # Centre le texte sur plusieurs lignes
-            anchor="center"  # Centre aussi verticalement si plusieurs lignes
-        )
+        self.result_label = tk.Label(root, text="", font=("Comic Sans MS", 12), bg="#eec2c9", width=30, wraplength=200,  justify="center", anchor="center" )
         self.result_label.place(x=50, y=320, width=200)
 
         self.sound_button = tk.Button(root, text="SON", font=("Comic Sans MS", 10), command=self.play_sound)
