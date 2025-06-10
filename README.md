@@ -51,9 +51,14 @@ Modèle de classification d’images basé sur EfficientNetB3 permettant l’ide
 | EfficientNetB3| 33|37 | 20| 98,68|
 | EfficientNetB3| 32| 36| 20| 98,10|
 | EfficientNetB3| 28| 38| 20| 97,85|
-| EfficientNetB3| 30|35 | 20| **__98,83__**|
-|  | | | | |
-|  | | | | |
-|  | | | | |
-|  | | | | |
-|  | | | | |
+| EfficientNetB3| 30|35 | 20| **98,83**|
+| ConvNeXt | 30| 35| 20 | 98.58|
+| ConvNeXt | 30| 30 | 20 | 98.68|
+| ConvNeXt | 30 |25 | 20 | 98.68|
+| ConvNeXt | 35| 25| 20 | 98.10|
+| ConvNeXt | 40| 25| 20 | 98.39|
+| ConvNeXt | 50| 30| 20 | **98.83**|
+| ConvNeXt | 50| 35 | 20 | **98.83**|
+| ConvNeXt | 50| 40 | 20 | 97.95|
+| ConvNeXt | 50| 20| 20 | |
+| ConvNeXt | | | 20 | |
