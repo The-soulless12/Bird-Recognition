@@ -30,7 +30,11 @@ Modèle de classification d’images basé sur EfficientNetB3 permettant l’ide
 | ResNet50 | 35 |2 |20 |95,32 |
 | ResNet50 |35 | 10|20 |96,05 |
 | ResNet50 |40 | 1| 20| 95,03|
-|  | | | | |
+| ResNet50| 50 | 35 | 20 | 95,61 |
+| ResNet50| 45| 35 |20 | 93.42|
+| ResNet50| 45| 30| 20|96.78 |
+| ResNet50| 42| 33|20 | 96.05|
+| ResNet50| 40| 32| 20| 95.61|
 |  | | | | |
 |  | | | | |
 |  | | | | |
