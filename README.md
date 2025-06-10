@@ -16,8 +16,23 @@ Modèle de classification d’images basé sur EfficientNetB3 permettant l’ide
 - Les packages : tensorflow, matplotlib, tkinter, Pillow, numpy, os, playsound & glob.
 
 # Note
--
-| Colonne 1 | Colonne 2 | Colonne 3 |
-|:------:|:------:|:------:|
-| Ligne 1   | Donnée A  | Donnée B  |
-| Ligne 2   | Donnée C  | Donnée D  |
+- Pour atteindre une précision finale de 98.83 %, un travail d’optimisation des hyperparamètres a été nécessaire. L’objectif était de trouver la meilleure combinaison possible pour maximiser la performance du modèle lors de la phase d’entraînement.
+- Plusieurs expérimentations ont été menées en variant notamment l’architecture de base (MobileNetV2, ResNet50, EfficientNetB3, ConvNeXt), le taux de dropout, le nombre de blocs à décongeler dans le modèle pré-entraîné ainsi que le nombre d’époques d'entraînement. De plus, tous les modèles ont été exécutés sur Google Colab, avec accélération GPU. Voici un récapitulatif des différents tests effectués :
+| Architecture | Droupout (%) | Blocs dégelés | Epochs | Accuracy (%) |
+|:------:|:------:|:------:|:------:| :------:|
+| MobileNetV2  | 55| 1|10 |56,87 |
+| MobileNetV2 | 0|0 |10 | 56,98|
+| MobileNetV2 | 40| 1|10 |57,31 |
+| MobileNetV2 |20 |2 | 10| 45,18 |
+| MobileNetV2 |40 | 1| 10|57,31 |
+| MobileNetV2 | 55|1 | 10|56,87 |
+| ResNet50 | 35 |2 |20 |95,32 |
+| ResNet50 |35 | 10|20 |96,05 |
+| ResNet50 |40 | 1| 20| 95,03|
+|  | | | | |
+|  | | | | |
+|  | | | | |
+|  | | | | |
+|  | | | | |
+|  | | | | |
+|  | | | | |
