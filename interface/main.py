@@ -16,7 +16,7 @@ class ImageApp:
         self.root.resizable(False, False)
 
         # On appelle le modèle pré-entraîné
-        self.model = load_model(os.path.join('../model', 'E-30-35-98,83+.keras'))
+        self.model = load_model(os.path.join('../model', 'E-30-35-98,83.keras'))
         images_dir = '../images'
         self.class_names = sorted([
             d for d in os.listdir(images_dir)

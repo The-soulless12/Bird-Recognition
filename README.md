@@ -60,5 +60,8 @@ Modèle de classification d’images basé sur EfficientNetB3 permettant l’ide
 | ConvNeXt | 50| 30| 20 | **98.83**|
 | ConvNeXt | 50| 35 | 20 | **98.83**|
 | ConvNeXt | 50| 40 | 20 | 97.95|
-| ConvNeXt | 50| 20| 20 | |
-| ConvNeXt | | | 20 | |
+| ConvNeXt | 50| 20| 20 | **98.83**|
+| ConvNeXt | 50| 15| 20 | 98,54|
+| ConvNeXt | 40| 15| 20 | 98,68 |
+| ConvNeXt | 35| 15| 20 | 98,68|
+| ConvNeXt | 30| 15| 20 | 98,54|
