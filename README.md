@@ -18,6 +18,6 @@ Modèle de classification d’images basé sur EfficientNetB3 permettant l’ide
 # Note
 -
 | Colonne 1 | Colonne 2 | Colonne 3 |
-|-----------|-----------|-----------|
+|:------:|:------:|:------:|
 | Ligne 1   | Donnée A  | Donnée B  |
 | Ligne 2   | Donnée C  | Donnée D  |
