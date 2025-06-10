@@ -16,6 +16,7 @@ Modèle de classification d’images basé sur EfficientNetB3 permettant l’ide
 - Les packages : tensorflow, matplotlib, tkinter, Pillow, numpy, os, playsound & glob.
 
 # Note
+- Le modèle préentraîné est disponible au téléchargement via ce lien : [E-30-35-98,83.keras](https://drive.google.com/file/d/1lv2bGIFW4VsZqR-HX_lc6dKgVCMoSaL1/view?usp=drive_link).
 - Pour atteindre une précision finale de 98.83 %, un travail d’optimisation des hyperparamètres a été nécessaire. L’objectif était de trouver la meilleure combinaison possible pour maximiser la performance du modèle lors de la phase d’entraînement.
 - Plusieurs expérimentations ont été menées en variant notamment l’architecture de base (MobileNetV2, ResNet50, EfficientNetB3, ConvNeXt), le taux de dropout, le nombre de blocs à décongeler dans le modèle pré-entraîné ainsi que le nombre d’epochs d'entraînement. De plus, tous les modèles ont été exécutés sur Google Colab, avec accélération GPU. Voici un récapitulatif des différents tests effectués :
   
@@ -57,6 +58,7 @@ Modèle de classification d’images basé sur EfficientNetB3 permettant l’ide
 | ConvNeXt | 30 |25 | 20 | 98.68|
 | ConvNeXt | 35| 25| 20 | 98.10|
 | ConvNeXt | 40| 25| 20 | 98.39|
+| ConvNeXt | 30| 40| 20 | **98.83**|
 | ConvNeXt | 50| 30| 20 | **98.83**|
 | ConvNeXt | 50| 35 | 20 | **98.83**|
 | ConvNeXt | 50| 40 | 20 | 97.95|
