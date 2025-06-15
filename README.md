@@ -22,50 +22,63 @@ Modèle de classification d’images basé sur EfficientNetB3 permettant l’ide
 - Plusieurs expérimentations ont donc été menées en variant notamment l’architecture de base (MobileNetV2, ResNet50, EfficientNetB3, ConvNeXt), le taux de dropout, le nombre de blocs à décongeler dans le modèle pré-entraîné ainsi que le nombre d’epochs d'entraînement.
 - Tous les modèles ont été exécutés sur Google Colab avec une accélération GPU T4 et la précision finale a été atteinte après un entraînement d’une durée de **3 minutes et 43 secondes**. Voici un tableau récapitulatif des différents tests effectués :
 
-<div align="center">  
-| Architecture | Droupout (%) | Blocs dégelés | Epochs | Accuracy (%) |
-|:------:|:------:|:------:|:------:| :------:|
-| MobileNetV2 | 20 | 2 | 10 | 45,18 |
-| MobileNetV2 | 55 | 1 | 10 | 56,87 |
-| MobileNetV2 | 0  | 0 | 10 | 56,98 |
-| MobileNetV2 | 40 | 1 | 10 | 57,31 |
-| ResNet50 | 45 | 35 | 20 | 93,42 |
-| ResNet50 | 40 | 1  | 20 | 95,03 |
-| ResNet50 | 35 | 2  | 20 | 95,32 |
-| ResNet50 | 50 | 35 | 20 | 95,61 |
-| ResNet50 | 40 | 32 | 20 | 95,61 |
-| ResNet50 | 35 | 10 | 20 | 96,05 |
-| ResNet50 | 42 | 33 | 20 | 96,05 |
-| ResNet50 | 45 | 30 | 20 | 96,78 |
-| EfficientNetB3 | 30 | 0  | 20 | 96,64 |
-| EfficientNetB3 | 28 | 38 | 20 | 97,85 |
-| EfficientNetB3 | 40 | 30 | 20 | 97,81 |
-| EfficientNetB3 | 20 | 1  | 20 | 97,95 |
-| EfficientNetB3 | 45 | 19 | 20 | 97,95 |
-| EfficientNetB3 | 45 | 35 | 20 | 97,95 |
-| EfficientNetB3 | 50 | 35 | 20 | 97,95 |
-| EfficientNetB3 | 45 | 21 | 20 | 98,10 |
-| EfficientNetB3 | 30 | 23 | 20 | 98,10 |
-| EfficientNetB3 | 32 | 36 | 20 | 98,10 |
-| EfficientNetB3 | 45 | 30 | 20 | 98,25 |
-| EfficientNetB3 | 35 | 30 | 20 | 98,39 |
-| EfficientNetB3 | 35 | 35 | 20 | 98,39 |
-| EfficientNetB3 | 35 | 25 | 20 | 98,54 |
-| EfficientNetB3 | 45 | 16 | 20 | 98,68 |
-| EfficientNetB3 | 33 | 37 | 20 | 98,68 |
-| EfficientNetB3 | 30 | 35 | 20 | 98,83 |
-| ConvNeXt | 50 | 40 | 20 | 97,95 |
-| ConvNeXt | 35 | 25 | 20 | 98,10 |
-| ConvNeXt | 40 | 25 | 20 | 98,39 |
-| ConvNeXt | 30 | 15 | 20 | 98,54 |
-| ConvNeXt | 50 | 15 | 20 | 98,54 |
-| ConvNeXt | 30 | 35 | 20 | 98,58 |
-| ConvNeXt | 30 | 30 | 20 | 98,68 |
-| ConvNeXt | 30 | 25 | 20 | 98,68 |
-| ConvNeXt | 40 | 15 | 20 | 98,68 |
-| ConvNeXt | 35 | 15 | 20 | 98,68 |
-| ConvNeXt | 30 | 40 | 20 | 98,83 |
-| ConvNeXt | 50 | 30 | 20 | 98,83 |
-| ConvNeXt | 50 | 35 | 20 | 98,83 |
-| ConvNeXt | 50 | 20 | 20 | 98,83 |
+<div align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th>Architecture</th>
+      <th>Droupout (%)</th>
+      <th>Blocs dégelés</th>
+      <th>Epochs</th>
+      <th>Accuracy (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>MobileNetV2</td><td>20</td><td>2</td><td>10</td><td>45,18</td></tr>
+    <tr><td>MobileNetV2</td><td>55</td><td>1</td><td>10</td><td>56,87</td></tr>
+    <tr><td>MobileNetV2</td><td>0</td><td>0</td><td>10</td><td>56,98</td></tr>
+    <tr><td>MobileNetV2</td><td>40</td><td>1</td><td>10</td><td>57,31</td></tr>
+    <tr><td>ResNet50</td><td>45</td><td>35</td><td>20</td><td>93,42</td></tr>
+    <tr><td>ResNet50</td><td>40</td><td>1</td><td>20</td><td>95,03</td></tr>
+    <tr><td>ResNet50</td><td>35</td><td>2</td><td>20</td><td>95,32</td></tr>
+    <tr><td>ResNet50</td><td>50</td><td>35</td><td>20</td><td>95,61</td></tr>
+    <tr><td>ResNet50</td><td>40</td><td>32</td><td>20</td><td>95,61</td></tr>
+    <tr><td>ResNet50</td><td>35</td><td>10</td><td>20</td><td>96,05</td></tr>
+    <tr><td>ResNet50</td><td>42</td><td>33</td><td>20</td><td>96,05</td></tr>
+    <tr><td>ResNet50</td><td>45</td><td>30</td><td>20</td><td>96,78</td></tr>
+    <tr><td>EfficientNetB3</td><td>30</td><td>0</td><td>20</td><td>96,64</td></tr>
+    <tr><td>EfficientNetB3</td><td>28</td><td>38</td><td>20</td><td>97,85</td></tr>
+    <tr><td>EfficientNetB3</td><td>40</td><td>30</td><td>20</td><td>97,81</td></tr>
+    <tr><td>EfficientNetB3</td><td>20</td><td>1</td><td>20</td><td>97,95</td></tr>
+    <tr><td>EfficientNetB3</td><td>45</td><td>19</td><td>20</td><td>97,95</td></tr>
+    <tr><td>EfficientNetB3</td><td>45</td><td>35</td><td>20</td><td>97,95</td></tr>
+    <tr><td>EfficientNetB3</td><td>50</td><td>35</td><td>20</td><td>97,95</td></tr>
+    <tr><td>EfficientNetB3</td><td>45</td><td>21</td><td>20</td><td>98,10</td></tr>
+    <tr><td>EfficientNetB3</td><td>30</td><td>23</td><td>20</td><td>98,10</td></tr>
+    <tr><td>EfficientNetB3</td><td>32</td><td>36</td><td>20</td><td>98,10</td></tr>
+    <tr><td>EfficientNetB3</td><td>45</td><td>30</td><td>20</td><td>98,25</td></tr>
+    <tr><td>EfficientNetB3</td><td>35</td><td>30</td><td>20</td><td>98,39</td></tr>
+    <tr><td>EfficientNetB3</td><td>35</td><td>35</td><td>20</td><td>98,39</td></tr>
+    <tr><td>EfficientNetB3</td><td>35</td><td>25</td><td>20</td><td>98,54</td></tr>
+    <tr><td>EfficientNetB3</td><td>45</td><td>16</td><td>20</td><td>98,68</td></tr>
+    <tr><td>EfficientNetB3</td><td>33</td><td>37</td><td>20</td><td>98,68</td></tr>
+    <tr><td>EfficientNetB3</td><td>30</td><td>35</td><td>20</td><td>98,83</td></tr>
+    <tr><td>ConvNeXt</td><td>50</td><td>40</td><td>20</td><td>97,95</td></tr>
+    <tr><td>ConvNeXt</td><td>35</td><td>25</td><td>20</td><td>98,10</td></tr>
+    <tr><td>ConvNeXt</td><td>40</td><td>25</td><td>20</td><td>98,39</td></tr>
+    <tr><td>ConvNeXt</td><td>30</td><td>15</td><td>20</td><td>98,54</td></tr>
+    <tr><td>ConvNeXt</td><td>50</td><td>15</td><td>20</td><td>98,54</td></tr>
+    <tr><td>ConvNeXt</td><td>30</td><td>35</td><td>20</td><td>98,58</td></tr>
+    <tr><td>ConvNeXt</td><td>30</td><td>30</td><td>20</td><td>98,68</td></tr>
+    <tr><td>ConvNeXt</td><td>30</td><td>25</td><td>20</td><td>98,68</td></tr>
+    <tr><td>ConvNeXt</td><td>40</td><td>15</td><td>20</td><td>98,68</td></tr>
+    <tr><td>ConvNeXt</td><td>35</td><td>15</td><td>20</td><td>98,68</td></tr>
+    <tr><td>ConvNeXt</td><td>30</td><td>40</td><td>20</td><td>98,83</td></tr>
+    <tr><td>ConvNeXt</td><td>50</td><td>30</td><td>20</td><td>98,83</td></tr>
+    <tr><td>ConvNeXt</td><td>50</td><td>35</td><td>20</td><td>98,83</td></tr>
+    <tr><td>ConvNeXt</td><td>50</td><td>20</td><td>20</td><td>98,83</td></tr>
+  </tbody>
+</table>
+
 </div>
