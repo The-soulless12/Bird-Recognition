@@ -23,7 +23,6 @@ Modèle de classification d’images basé sur EfficientNetB3 permettant l’ide
 - Tous les modèles ont été exécutés sur Google Colab avec une accélération GPU T4 et la précision finale a été atteinte après un entraînement d’une durée de **3 minutes et 43 secondes**. Voici un tableau récapitulatif des différents tests effectués :
 
 <div align="center">
-
 <table>
   <thead>
     <tr>
@@ -80,5 +79,4 @@ Modèle de classification d’images basé sur EfficientNetB3 permettant l’ide
     <tr><td>ConvNeXt</td><td>50</td><td>20</td><td>20</td><td>98,83</td></tr>
   </tbody>
 </table>
-
 </div>
