@@ -26,57 +26,57 @@ Modèle de classification d’images basé sur EfficientNetB3 permettant l’ide
 <table>
   <thead>
     <tr>
-      <th>Architecture</th>
-      <th>Droupout (%)</th>
-      <th>Blocs dégelés</th>
-      <th>Epochs</th>
-      <th>Accuracy (%)</th>
+      <th align="center">Architecture</th>
+      <th align="center">Droupout (%)</th>
+      <th align="center">Blocs dégelés</th>
+      <th align="center">Epochs</th>
+      <th align="center">Accuracy (%)</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td>MobileNetV2</td><td>20</td><td>2</td><td>10</td><td>45,18</td></tr>
-    <tr><td>MobileNetV2</td><td>55</td><td>1</td><td>10</td><td>56,87</td></tr>
-    <tr><td>MobileNetV2</td><td>0</td><td>0</td><td>10</td><td>56,98</td></tr>
-    <tr><td>MobileNetV2</td><td>40</td><td>1</td><td>10</td><td>57,31</td></tr>
-    <tr><td>ResNet50</td><td>45</td><td>35</td><td>20</td><td>93,42</td></tr>
-    <tr><td>ResNet50</td><td>40</td><td>1</td><td>20</td><td>95,03</td></tr>
-    <tr><td>ResNet50</td><td>35</td><td>2</td><td>20</td><td>95,32</td></tr>
-    <tr><td>ResNet50</td><td>50</td><td>35</td><td>20</td><td>95,61</td></tr>
-    <tr><td>ResNet50</td><td>40</td><td>32</td><td>20</td><td>95,61</td></tr>
-    <tr><td>ResNet50</td><td>35</td><td>10</td><td>20</td><td>96,05</td></tr>
-    <tr><td>ResNet50</td><td>42</td><td>33</td><td>20</td><td>96,05</td></tr>
-    <tr><td>ResNet50</td><td>45</td><td>30</td><td>20</td><td>96,78</td></tr>
-    <tr><td>EfficientNetB3</td><td>30</td><td>0</td><td>20</td><td>96,64</td></tr>
-    <tr><td>EfficientNetB3</td><td>28</td><td>38</td><td>20</td><td>97,85</td></tr>
-    <tr><td>EfficientNetB3</td><td>40</td><td>30</td><td>20</td><td>97,81</td></tr>
-    <tr><td>EfficientNetB3</td><td>20</td><td>1</td><td>20</td><td>97,95</td></tr>
-    <tr><td>EfficientNetB3</td><td>45</td><td>19</td><td>20</td><td>97,95</td></tr>
-    <tr><td>EfficientNetB3</td><td>45</td><td>35</td><td>20</td><td>97,95</td></tr>
-    <tr><td>EfficientNetB3</td><td>50</td><td>35</td><td>20</td><td>97,95</td></tr>
-    <tr><td>EfficientNetB3</td><td>45</td><td>21</td><td>20</td><td>98,10</td></tr>
-    <tr><td>EfficientNetB3</td><td>30</td><td>23</td><td>20</td><td>98,10</td></tr>
-    <tr><td>EfficientNetB3</td><td>32</td><td>36</td><td>20</td><td>98,10</td></tr>
-    <tr><td>EfficientNetB3</td><td>45</td><td>30</td><td>20</td><td>98,25</td></tr>
-    <tr><td>EfficientNetB3</td><td>35</td><td>30</td><td>20</td><td>98,39</td></tr>
-    <tr><td>EfficientNetB3</td><td>35</td><td>35</td><td>20</td><td>98,39</td></tr>
-    <tr><td>EfficientNetB3</td><td>35</td><td>25</td><td>20</td><td>98,54</td></tr>
-    <tr><td>EfficientNetB3</td><td>45</td><td>16</td><td>20</td><td>98,68</td></tr>
-    <tr><td>EfficientNetB3</td><td>33</td><td>37</td><td>20</td><td>98,68</td></tr>
-    <tr><td>EfficientNetB3</td><td>30</td><td>35</td><td>20</td><td>98,83</td></tr>
-    <tr><td>ConvNeXt</td><td>50</td><td>40</td><td>20</td><td>97,95</td></tr>
-    <tr><td>ConvNeXt</td><td>35</td><td>25</td><td>20</td><td>98,10</td></tr>
-    <tr><td>ConvNeXt</td><td>40</td><td>25</td><td>20</td><td>98,39</td></tr>
-    <tr><td>ConvNeXt</td><td>30</td><td>15</td><td>20</td><td>98,54</td></tr>
-    <tr><td>ConvNeXt</td><td>50</td><td>15</td><td>20</td><td>98,54</td></tr>
-    <tr><td>ConvNeXt</td><td>30</td><td>35</td><td>20</td><td>98,58</td></tr>
-    <tr><td>ConvNeXt</td><td>30</td><td>30</td><td>20</td><td>98,68</td></tr>
-    <tr><td>ConvNeXt</td><td>30</td><td>25</td><td>20</td><td>98,68</td></tr>
-    <tr><td>ConvNeXt</td><td>40</td><td>15</td><td>20</td><td>98,68</td></tr>
-    <tr><td>ConvNeXt</td><td>35</td><td>15</td><td>20</td><td>98,68</td></tr>
-    <tr><td>ConvNeXt</td><td>30</td><td>40</td><td>20</td><td>98,83</td></tr>
-    <tr><td>ConvNeXt</td><td>50</td><td>30</td><td>20</td><td>98,83</td></tr>
-    <tr><td>ConvNeXt</td><td>50</td><td>35</td><td>20</td><td>98,83</td></tr>
-    <tr><td>ConvNeXt</td><td>50</td><td>20</td><td>20</td><td>98,83</td></tr>
+    <tr><td align="center">MobileNetV2</td><td align="center">20</td><td align="center">2</td><td align="center">10</td><td align="center">45,18</td></tr>
+    <tr><td align="center">MobileNetV2</td><td align="center">55</td><td align="center">1</td><td align="center">10</td><td align="center">56,87</td></tr>
+    <tr><td align="center">MobileNetV2</td><td align="center">0</td><td align="center">0</td><td align="center">10</td><td align="center">56,98</td></tr>
+    <tr><td align="center">MobileNetV2</td><td align="center">40</td><td align="center">1</td><td align="center">10</td><td align="center">57,31</td></tr>
+    <tr><td align="center">ResNet50</td><td align="center">45</td><td align="center">35</td><td align="center">20</td><td align="center">93,42</td></tr>
+    <tr><td align="center">ResNet50</td><td align="center">40</td><td align="center">1</td><td align="center">20</td><td align="center">95,03</td></tr>
+    <tr><td align="center">ResNet50</td><td align="center">35</td><td align="center">2</td><td align="center">20</td><td align="center">95,32</td></tr>
+    <tr><td align="center">ResNet50</td><td align="center">50</td><td align="center">35</td><td align="center">20</td><td align="center">95,61</td></tr>
+    <tr><td align="center">ResNet50</td><td align="center">40</td><td align="center">32</td><td align="center">20</td><td align="center">95,61</td></tr>
+    <tr><td align="center">ResNet50</td><td align="center">35</td><td align="center">10</td><td align="center">20</td><td align="center">96,05</td></tr>
+    <tr><td align="center">ResNet50</td><td align="center">42</td><td align="center">33</td><td align="center">20</td><td align="center">96,05</td></tr>
+    <tr><td align="center">ResNet50</td><td align="center">45</td><td align="center">30</td><td align="center">20</td><td align="center">96,78</td></tr>
+    <tr><td align="center">EfficientNetB3</td><td align="center">30</td><td align="center">0</td><td align="center">20</td><td align="center">96,64</td></tr>
+    <tr><td align="center">EfficientNetB3</td><td align="center">28</td><td align="center">38</td><td align="center">20</td><td align="center">97,85</td></tr>
+    <tr><td align="center">EfficientNetB3</td><td align="center">40</td><td align="center">30</td><td align="center">20</td><td align="center">97,81</td></tr>
+    <tr><td align="center">EfficientNetB3</td><td align="center">20</td><td align="center">1</td><td align="center">20</td><td align="center">97,95</td></tr>
+    <tr><td align="center">EfficientNetB3</td><td align="center">45</td><td align="center">19</td><td align="center">20</td><td align="center">97,95</td></tr>
+    <tr><td align="center">EfficientNetB3</td><td align="center">45</td><td align="center">35</td><td align="center">20</td><td align="center">97,95</td></tr>
+    <tr><td align="center">EfficientNetB3</td><td align="center">50</td><td align="center">35</td><td align="center">20</td><td align="center">97,95</td></tr>
+    <tr><td align="center">EfficientNetB3</td><td align="center">45</td><td align="center">21</td><td align="center">20</td><td align="center">98,10</td></tr>
+    <tr><td align="center">EfficientNetB3</td><td align="center">30</td><td align="center">23</td><td align="center">20</td><td align="center">98,10</td></tr>
+    <tr><td align="center">EfficientNetB3</td><td align="center">32</td><td align="center">36</td><td align="center">20</td><td align="center">98,10</td></tr>
+    <tr><td align="center">EfficientNetB3</td><td align="center">45</td><td align="center">30</td><td align="center">20</td><td align="center">98,25</td></tr>
+    <tr><td align="center">EfficientNetB3</td><td align="center">35</td><td align="center">30</td><td align="center">20</td><td align="center">98,39</td></tr>
+    <tr><td align="center">EfficientNetB3</td><td align="center">35</td><td align="center">35</td><td align="center">20</td><td align="center">98,39</td></tr>
+    <tr><td align="center">EfficientNetB3</td><td align="center">35</td><td align="center">25</td><td align="center">20</td><td align="center">98,54</td></tr>
+    <tr><td align="center">EfficientNetB3</td><td align="center">45</td><td align="center">16</td><td align="center">20</td><td align="center">98,68</td></tr>
+    <tr><td align="center">EfficientNetB3</td><td align="center">33</td><td align="center">37</td><td align="center">20</td><td align="center">98,68</td></tr>
+    <tr><td align="center">EfficientNetB3</td><td align="center">30</td><td align="center">35</td><td align="center">20</td><td align="center">98,83</td></tr>
+    <tr><td align="center">ConvNeXt</td><td align="center">50</td><td align="center">40</td><td align="center">20</td><td align="center">97,95</td></tr>
+    <tr><td align="center">ConvNeXt</td><td align="center">35</td><td align="center">25</td><td align="center">20</td><td align="center">98,10</td></tr>
+    <tr><td align="center">ConvNeXt</td><td align="center">40</td><td align="center">25</td><td align="center">20</td><td align="center">98,39</td></tr>
+    <tr><td align="center">ConvNeXt</td><td align="center">30</td><td align="center">15</td><td align="center">20</td><td align="center">98,54</td></tr>
+    <tr><td align="center">ConvNeXt</td><td align="center">50</td><td align="center">15</td><td align="center">20</td><td align="center">98,54</td></tr>
+    <tr><td align="center">ConvNeXt</td><td align="center">30</td><td align="center">35</td><td align="center">20</td><td align="center">98,58</td></tr>
+    <tr><td align="center">ConvNeXt</td><td align="center">30</td><td align="center">30</td><td align="center">20</td><td align="center">98,68</td></tr>
+    <tr><td align="center">ConvNeXt</td><td align="center">30</td><td align="center">25</td><td align="center">20</td><td align="center">98,68</td></tr>
+    <tr><td align="center">ConvNeXt</td><td align="center">40</td><td align="center">15</td><td align="center">20</td><td align="center">98,68</td></tr>
+    <tr><td align="center">ConvNeXt</td><td align="center">35</td><td align="center">15</td><td align="center">20</td><td align="center">98,68</td></tr>
+    <tr><td align="center">ConvNeXt</td><td align="center">30</td><td align="center">40</td><td align="center">20</td><td align="center">98,83</td></tr>
+    <tr><td align="center">ConvNeXt</td><td align="center">50</td><td align="center">30</td><td align="center">20</td><td align="center">98,83</td></tr>
+    <tr><td align="center">ConvNeXt</td><td align="center">50</td><td align="center">35</td><td align="center">20</td><td align="center">98,83</td></tr>
+    <tr><td align="center">ConvNeXt</td><td align="center">50</td><td align="center">20</td><td align="center">20</td><td align="center">98,83</td></tr>
   </tbody>
 </table>
 </div>
